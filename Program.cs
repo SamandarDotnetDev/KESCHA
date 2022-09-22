@@ -39,22 +39,32 @@
 // System.Console.WriteLine(isBoy);
 
 
-// Console.Write("Enter your name: ");
-// string name = Console.ReadLine();
-// string greeting = $"Hello,{name}";
-// Console.WriteLine(greeting);
+Console.Write("Enter your name: ");
+string name = Console.ReadLine();
+string greeting = $"Hello,{name}";
+Console.WriteLine(greeting);
 
-// Console.Write("Enter your age: ");
-// int myAge = Convert.ToInt32(Console.ReadLine());
-// int keschaAgeAs = 2;
+Console.Write("Enter your age: ");
+int myAge = Convert.ToInt32(Console.ReadLine());
+int keschaAgeAs = 2;
 
 
-// Console.WriteLine($"Yosh o'rtasidagi farq! {myAge - keschaAgeAs}");
+Console.WriteLine($"Yosh o'rtasidagi farq! {myAge - keschaAgeAs}");
+Console.WriteLine($"You are older then KESCHA! {myAge > keschaAgeAs}");
+Console.WriteLine($"You are youngen then KESCHA! {myAge < keschaAgeAs}");
+Console.WriteLine($"You are equal then KESCHA! {myAge == keschaAgeAs}");
+Console.WriteLine($"You are older then or equal to KESCHA! {myAge >= keschaAgeAs}");
 
-System.Console.WriteLine(sizeof(char));
-char smallA = '&';
-char capitalA = '$';
 
-System.Console.WriteLine((int)smallA);
-System.Console.WriteLine((int)capitalA);
+
+
+
+
+// System.Console.WriteLine(sizeof(char));
+// char smallA = '&';
+// char capitalA = '$';
+
+// System.Console.WriteLine((int)smallA);
+// System.Console.WriteLine((int)capitalA);
+
 
