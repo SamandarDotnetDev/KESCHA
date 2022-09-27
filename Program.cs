@@ -39,21 +39,34 @@
 // System.Console.WriteLine(isBoy);
 
 
-Console.Write("Enter your name: ");
-string name = Console.ReadLine();
-string greeting = $"Hello,{name}";
-Console.WriteLine(greeting);
+// Console.Write("Enter your name: ");
+// string name = Console.ReadLine();
+// string greeting = $"Hello,{name}";
+// Console.WriteLine(greeting);
 
 Console.Write("Enter your age: ");
 int myAge = Convert.ToInt32(Console.ReadLine());
-int keschaAgeAs = 2;
+int keschaAgeAs = 4;
+
+if (myAge < keschaAgeAs)
+{
+  System.Console.WriteLine("You are youngen");
+}
+else if (myAge == keschaAgeAs)
+{
+  System.Console.WriteLine("You are equal");
+}
+else
+{
+  System.Console.WriteLine("You are older");
+}
 
 
-Console.WriteLine($"Yosh o'rtasidagi farq! {myAge - keschaAgeAs}");
-Console.WriteLine($"You are older then KESCHA! {myAge > keschaAgeAs}");
-Console.WriteLine($"You are youngen then KESCHA! {myAge < keschaAgeAs}");
-Console.WriteLine($"You are equal then KESCHA! {myAge == keschaAgeAs}");
-Console.WriteLine($"You are older then or equal to KESCHA! {myAge >= keschaAgeAs}");
+// Console.WriteLine($"Yosh o'rtasidagi farq! {myAge - keschaAgeAs}");
+// Console.WriteLine($"You are older then KESCHA! {myAge > keschaAgeAs}");
+// Console.WriteLine($"You are youngen then KESCHA! {myAge < keschaAgeAs}");
+// Console.WriteLine($"You are equal then KESCHA! {myAge == keschaAgeAs}");
+// Console.WriteLine($"You are older then or equal to KESCHA! {myAge >= keschaAgeAs}");
 
 
 
