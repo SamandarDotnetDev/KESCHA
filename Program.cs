@@ -1,5 +1,11 @@
 ﻿// // See https://aka.ms/new-console-template for more information
 // Console.WriteLine("Salom,Yangi foydalanuvchi!");
+string password = "";
+do
+{
+  System.Console.Write("Enter you're password :");
+  password = Console.ReadLine();
+} while (password != "s@m@4dar");
 
 // Console.Write("Iltimos,buyerga ismingni kirit : ");
 // string username = Console.ReadLine();
