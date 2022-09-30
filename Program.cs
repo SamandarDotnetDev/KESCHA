@@ -48,18 +48,18 @@ Console.Write("Enter your age: ");
 int myAge = Convert.ToInt32(Console.ReadLine());
 int keschaAgeAs = 4;
 
-if (myAge < keschaAgeAs)
-{
-  System.Console.WriteLine("You are youngen");
-}
-else if (myAge == keschaAgeAs)
-{
-  System.Console.WriteLine("You are equal");
-}
-else
-{
-  System.Console.WriteLine("You are older");
-}
+// if (myAge < keschaAgeAs)
+// {
+//   System.Console.WriteLine("You are youngen");
+// }
+// else if (myAge == keschaAgeAs)
+// {
+//   System.Console.WriteLine("You are equal");
+// }
+// else
+// {
+//   System.Console.WriteLine("You are older");
+// }
 
 
 // Console.WriteLine($"Yosh o'rtasidagi farq! {myAge - keschaAgeAs}");
@@ -67,7 +67,10 @@ else
 // Console.WriteLine($"You are youngen then KESCHA! {myAge < keschaAgeAs}");
 // Console.WriteLine($"You are equal then KESCHA! {myAge == keschaAgeAs}");
 // Console.WriteLine($"You are older then or equal to KESCHA! {myAge >= keschaAgeAs}");
-
+string massage = myAge >= keschaAgeAs
+? "You are older or equal"
+: "You are youngen";
+System.Console.WriteLine(massage);
 
 
 
