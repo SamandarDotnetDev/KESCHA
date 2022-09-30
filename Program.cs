@@ -67,10 +67,29 @@ int keschaAgeAs = 4;
 // Console.WriteLine($"You are youngen then KESCHA! {myAge < keschaAgeAs}");
 // Console.WriteLine($"You are equal then KESCHA! {myAge == keschaAgeAs}");
 // Console.WriteLine($"You are older then or equal to KESCHA! {myAge >= keschaAgeAs}");
-string massage = myAge >= keschaAgeAs
-? "You are older or equal"
-: "You are youngen";
-System.Console.WriteLine(massage);
+
+//Ternary operator
+// string massage = myAge >= keschaAgeAs
+//    ? "You are older or equal"
+//    : "You are youngen";
+// System.Console.WriteLine(massage);
+
+//logical operator
+string agePosition = (myAge > 0 && keschaAgeAs > 0)
+  ? "You're and KESCHA age is positive"
+  : "You're and KESCHA age is negative";
+System.Console.WriteLine(agePosition);
+
+string ageDifferense = (myAge > 0 || keschaAgeAs > 0)
+  ? "You're or KESCHA age is positive"
+  : "You're or KESCHA age is negative";
+
+System.Console.WriteLine(ageDifferense);
+
+string ageKescha = !(keschaAgeAs > 0)
+  ? "KESCHA age is not positive"
+  : "KESCHA age is not negative";
+System.Console.WriteLine(ageKescha);
 
 
 
