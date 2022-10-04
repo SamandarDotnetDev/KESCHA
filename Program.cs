@@ -1,11 +1,12 @@
-﻿// // See https://aka.ms/new-console-template for more information
+﻿using KESCHA.Classes;
+// // See https://aka.ms/new-console-template for more information
 // Console.WriteLine("Salom,Yangi foydalanuvchi!");
-string password = "";
-do
-{
-  System.Console.Write("Enter you're password :");
-  password = Console.ReadLine();
-} while (password != "s@m@4dar");
+// string password = "";
+// do
+// {
+//   System.Console.Write("Enter you're password :");
+//   password = Console.ReadLine();
+// } while (password != "s@m@4dar");
 
 // Console.Write("Iltimos,buyerga ismingni kirit : ");
 // string username = Console.ReadLine();
@@ -45,14 +46,17 @@ do
 // System.Console.WriteLine(isBoy);
 
 
-// Console.Write("Enter your name: ");
-// string name = Console.ReadLine();
+Console.Write("Enter your name: ");
+string name = Console.ReadLine();
 // string greeting = $"Hello,{name}";
 // Console.WriteLine(greeting);
 
 Console.Write("Enter your age: ");
 int myAge = Convert.ToInt32(Console.ReadLine());
 int keschaAgeAs = 4;
+
+Animal kescha = new Animal();
+Car Bmw = new Car();
 
 // if (myAge < keschaAgeAs)
 // {
@@ -107,5 +111,19 @@ System.Console.WriteLine(ageKescha);
 
 // System.Console.WriteLine((int)smallA);
 // System.Console.WriteLine((int)capitalA);
+
+System.Console.WriteLine("Let me tell you about my friends");
+string[] friendsName = new string[3];
+friendsName[0] = "Vasya";
+friendsName[1] = "Katya";
+friendsName[2] = name;
+
+
+
+int[] friendsAge = { 12, 15, myAge };
+string[] address = { "Moskow", "Tashkent", "Samarkand" };
+System.Console.WriteLine($"{friendsName[0]} is {friendsAge[0]} year old and location {address[0]}");
+System.Console.WriteLine($"{friendsName[1]} is {friendsAge[1]} year old and location {address[1]}");
+System.Console.WriteLine($"{friendsName[2]} is {friendsAge[2]} year old and location {address[2]}");
 
 
